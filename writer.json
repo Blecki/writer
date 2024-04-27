@@ -1,0 +1,32 @@
+{
+    "CARDS": [
+        {
+            "id": "714cda40-6315-4a5b-b32c-f815f312c1a2",
+            "name": "new card",
+            "date": "0",
+            "dynamic_properties": {},
+            "tags": []
+        },
+        {
+            "id": "be6d067d-cc28-4d0d-a95f-0e367f833bcc",
+            "name": "new card 2",
+            "date": "0",
+            "dynamic_properties": {},
+            "tags": []
+        },
+        {
+            "id": "91030d51-5e16-4894-98ce-f6c1fb4d4d6f",
+            "name": "new card 3",
+            "date": "1",
+            "dynamic_properties": {},
+            "tags": []
+        },
+        {
+            "id": "b757e215-284a-4641-961d-914632fdf7fb",
+            "name": "new card 4",
+            "date": "2",
+            "dynamic_properties": {},
+            "tags": []
+        }
+    ]
+}

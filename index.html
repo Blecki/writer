@@ -1,0 +1,201 @@
+<head>
+    <script src="medium-editor/js/medium-editor.js"></script>
+    <link rel="stylesheet" href="medium-editor/css/medium-editor.css">
+    <link rel="stylesheet" href="medium-editor/css/themes/beagle.css">
+    <script type="module" src="cards.js"></script>
+    <style>   
+        :root {
+            --primary-background-color: #bbd7f4;
+            --darker-color: #9bb7d4;
+            --edge-color: #555555;
+            --button-text: #222222;
+        }
+
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            padding-top: 150px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            /*background-color: #c5eae7;*/
+            background-color: var(--primary-background-color);
+            margin: auto;
+            padding: 20px;
+            border: 1px solid var(--edge-color);
+            max-width: 1200px;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        .topbar {
+            display: grid;
+            grid-template-columns: 10% 30% 30% 30%;
+            position: sticky;
+            top: 0;
+            background-color: var(--primary-background-color);
+        }
+
+        button {
+            border-radius: 5px;
+            border: 1px solid var(--edge-color);
+            background-color: var(--darker-color);
+            color:	var(--button-text);
+            font-weight: bold;
+            margin: 2px;
+        }
+
+        .hidden-button {
+            border: none;
+            background-color: transparent;
+            margin: none;
+        }
+
+        .arrow-toggle {
+            border-radius: 25px;
+            border: 1px solid var(--edge-color);
+            background-color: #ffe6cc;
+            color: black;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        input {
+            border-radius: 5px;
+            border: 1px solid var(--edge-color);
+            background-color: white;
+            color: black;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        select {
+            border-radius: 5px;
+            border: 1px solid var(--edge-color);
+            background-color: white;
+            color: black;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        body {
+            background-color: var(--primary-background-color);
+            color: black;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 50px auto 100px 
+        }
+
+        .padded-box {
+            padding: 4px;
+        }
+
+        .margin-box {
+            margin: 4px;
+        }
+
+        .box {
+            border: 1px solid var(--edge-color);
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .date-column {
+            grid-column-start: 1;
+        }
+
+        .content-column {
+            grid-column: 2 2
+        }
+
+        .filter-display-container {
+            display: grid;
+            grid-template-columns: auto 50px;
+        }
+
+        .card {
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding: 5px;
+            display: grid;
+            grid-template-columns: 50px auto 100px;
+        }
+
+        .timeline {
+            background-color: #ffe6cc;
+            color: black;
+            border: 1px solid var(--edge-color);
+            padding: 5px;
+            display: grid;
+            border-radius: 5px;
+            margin-top: 4px;
+        }
+
+        .marker {
+            background-color: black;
+            margin:4px;
+            background-image: linear-gradient(
+                45deg,
+                #553c9a 0%,
+                #553c9a 20%,
+                #f5abf0 20%,
+                #f5abf0 40%,
+                #553c9a 40%,
+                #553c9a 60%,
+                #f5abf0 60%,
+                #f5abf0 80%,
+                #553c9a 80%,
+                #553c9a 100%
+                );
+                border: 1px solid var(--edge-color);
+            border-radius: 5px;
+        }
+
+        .summary-input {
+            width: 100%;
+        }
+
+        .tag-button {
+            display: inline;
+            border: 1px solid var(--edge-color);
+            background-color: #f5abf0;
+            color: black;
+            font-weight: bold;
+            margin: 2px;
+            border-radius: 5px;
+            padding-left: 4px;
+            padding-right: 4px;
+            white-space: nowrap;
+        }
+
+        .editable {
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            border: 1px solid var(--edge-color);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="FULL_PAGE"></div>
+    <script type="module">
+        import { initialize_cards } from "./cards.js";
+        initialize_cards(document.getElementById("FULL_PAGE"));
+    </script>
+</body>
