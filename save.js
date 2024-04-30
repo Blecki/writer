@@ -72,6 +72,8 @@ function upgrade(data) {
             if (!card.hasOwnProperty('prose')) card.prose = "";
             if (!card.hasOwnProperty('summary_expanded')) card.summary_expanded = true;
             if (!card.hasOwnProperty('prose_expanded')) card.prose_expanded = false;
+            if (!card.hasOwnProperty('word_goal')) card.word_goal = 0;
+            if (!card.hasOwnProperty('word_count')) card.word_count = 0;            
         }
     }
     else {
