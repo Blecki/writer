@@ -1,302 +1,4 @@
-let cards = [
-            {
-                "id": "84ff18c9-854c-4b0e-843c-994f412221c2",
-                "name": "Premise",
-                "date": "0",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "<p>A distant future adventure: Four unlikely heroes are sent on a suicide quest to pierce the viel. It is the far future, in a dystopian world where the surface is uninhabitable.</p>",
-                "prose": "",
-                "word_count": 31,
-                "summary_expanded": true,
-                "prose_expanded": false
-            },
-            {
-                "id": "70cd9f54-efda-41c1-9441-1e24824fc246",
-                "name": "The city degrades: Without parts, the atmosphere will fail",
-                "date": "0",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "<p>The world outside is overrun by mutants and ghoals. Without the machinery that cleans the air and water, the populace will die. But they need parts - they send the best, but all parties fail. Now they have an idea. Who can survive in the wild? Scoundrels. The worst of the worst. They'll send criminals.</p>",
-                "prose": "",
-                "word_count": 55,
-                "summary_expanded": true,
-                "prose_expanded": false
-            },
-            {
-                "id": "08d707ff-b9d3-4834-a053-0d81b98e4226",
-                "name": "Character: Joanna",
-                "date": "0",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "<p>Former cop. Was framed for corruption; serving a ten year sentence. She became a cop because of the murder of her parents, though she is unaware that her parents were criminals.&nbsp;</p>",
-                "prose": "",
-                "word_count": 31,
-                "summary_expanded": true,
-                "prose_expanded": false
-            },
-            {
-                "id": "33b2ad69-9dcf-4587-a1ce-a2b5f0ec866f",
-                "name": "Character: Elle",
-                "date": "0",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "<p>Assassin for hire. Betrayed by the man who raised her and arrested, she is set to be executed. Absolute psychopath. Seems unaware that other people don't like feeling pain.</p>",
-                "prose": "",
-                "word_count": 29,
-                "summary_expanded": true,
-                "prose_expanded": false
-            },
-            {
-                "id": "a515ffb5-1613-484a-952f-be47743dc184",
-                "name": "Character: Viggo",
-                "date": "0",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "<p>Old ronin, once part of a pirate gang that lived in the wastelands and raided traffic between the cities mad-max style. He betrayed and murdered them after a job gone bad where he discovers the caravan they hit is not transporting weapons, as their leader claims, but families. He hunts down every living member of their gang, ending with Joanna's parents who had settled down in the city. He is a scoundrel to this day, obsessed with expunging all reminders of his past. Joanna's father was the leader of their gang.</p>",
-                "prose": "",
-                "word_count": 91,
-                "summary_expanded": true,
-                "prose_expanded": false
-            },
-            {
-                "id": "c98b5d3e-e9a7-40d5-8ac8-53dd428f2429",
-                "name": "Character: Lily \"Corpse\" Flower",
-                "date": "0",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "<p>Adrogenous child-like hacker. Failed out of college - expelled for their antics; prefers to spend their time plugged into a virtual world. Is currently jailed for hacking the central bank and stealing a lot of money. Spouts a lot of anti-capitalist stuff, but, ya know, they aren't wrong. Immediately develops a crush on Emily.</p>",
-                "prose": "",
-                "word_count": 54,
-                "summary_expanded": true,
-                "prose_expanded": false
-            },
-            {
-                "id": "fd1bf059-3181-433b-912b-d004c21f5aac",
-                "name": "Character: Emily",
-                "date": "0",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "<p>Teenage princess of Crowsnest. She is 16. She is the king's first cousin, but was raised in their household.</p><p>The king is a sickly boy of 12. Her plot begins when the king dies - she immediately seals his rooms and forbids anyone but her to wait upon him. Thus she is seen as a dutiful princess; the doctor, a young man of 20, is convinced to aid her by her charm and empty promises, as he has quite the crush on her - he is seen as too young to be the doctor looking after the king but the princess insists. This despite that she is betrothed. There is also a brigand who has her ear, a mercenary with a group of men, that goads her into later actions. She tries to keep it secret, but one of the councilors lets it slip that the king is ill, and so the king's half-sisters are set to come from their home in another city to visit their brother - a thing Emily must prevent; thus she hires Elle to take care of the two women. The two had been sent to treat with the king of a rival city to form diplomatic relations and possibly find husbands, but were unable to safely return due to deterioration in the wasteland. Meanwhile, Emily forges the king's will, naming herself and any future male heirs as heir to the throne, claiming a wish from her cousin that his sisters marry abroad and that his kingdom does not pass into the hands of their husbands. That isn't how it would work anyway. But now, when news of his half sister's untimely deaths arrive, Emily can declare the king has died and take up the throne. She has grand ideas about reformation - she should be painted as sympathetic; as doing this for a good reason - even if it can't make up for ordering the death of the sisters, one of which is a literal child. The council reluctantly agrees and Emily ascends to the throne. She begins reforms immediately, alienating the guards by putting a brigand in charge. But she is unaware that the journey has changed Elle, and the sisters are alive. Just nine days later the sisters successfully turn the council against her, the doctor is killed, and when the council orders Emily's arrest and Emily orders the guards to arrest the council, the guards side with the council. The brigand, apparently, has been paid off.</p>",
-                "prose": "",
-                "word_count": 0,
-                "summary_expanded": true,
-                "prose_expanded": false
-            },
-            {
-                "id": "19bcb9cc-0bc0-45a5-9fee-f4c341c9dd43",
-                "name": "Location: Crowfall",
-                "date": "0",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "<p>Crowfall is an efficient and clean city built inside a canyon. The top is covered with a dome. The city is in the middle far from the walls, down which toxic sludge endlessly drips, fouling the lake beneath the city. The city itself is sealed. Very few leave, fewer still dare venture above the canyon rim. The surface around the canyon is known to be quite inhospitable.</p>",
-                "prose": "",
-                "word_count": 67,
-                "summary_expanded": true,
-                "prose_expanded": false
-            },
-            {
-                "id": "f17c1f2b-713b-4f16-9973-392ca26f34b8",
-                "name": "Joanna is framed for corruption",
-                "date": "14",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "",
-                "prose": "",
-                "word_count": 0,
-                "summary_expanded": false,
-                "prose_expanded": false
-            },
-            {
-                "id": "c028f328-0c73-4619-81a9-1904bb56bfe1",
-                "name": "Lily finds hints that her mother lives",
-                "date": "15",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "",
-                "prose": "",
-                "word_count": 0,
-                "summary_expanded": true,
-                "prose_expanded": false
-            },
-            {
-                "id": "0f876e8c-9f20-40ec-9da0-2064e49c03ca",
-                "name": "Lily born",
-                "date": "3556-08-25",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "",
-                "prose": "",
-                "word_count": 0
-            },
-            {
-                "id": "f44131c5-cafb-4b8a-9771-e485f5f6f4a8",
-                "name": "Lily's mother is banished from Crowfall",
-                "date": "3561-08-02",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "<p>For some crime Lily does not understand, her mother is banished.</p>",
-                "prose": "",
-                "word_count": 0,
-                "summary_expanded": false,
-                "prose_expanded": false
-            },
-            {
-                "id": "06a12e37-dc9e-4b97-90cd-b5f5ff19499a",
-                "name": "Joanna and Lily become friends",
-                "date": "3566-07-12",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "<p>Lily is a down on her luck kid stuck in the foster system and turning to crime, Joanna is the cop who thinks she needs to be saved.</p>",
-                "prose": "",
-                "word_count": 0,
-                "summary_expanded": false,
-                "prose_expanded": false
-            },
-            {
-                "id": "032f058a-66a4-402e-9217-0d4e5dbab47f",
-                "name": "Joanna arrests Elle",
-                "date": "3569-07-23",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "",
-                "prose": "",
-                "word_count": 0,
-                "summary_expanded": false,
-                "prose_expanded": false
-            },
-            {
-                "id": "5a06b347-faf0-42c0-9949-bee751fa6631",
-                "name": "Lily quits school",
-                "date": "3571-10-10",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "<p>At this time they are 15.</p>",
-                "prose": "",
-                "word_count": 0,
-                "summary_expanded": false,
-                "prose_expanded": false
-            },
-            {
-                "id": "c4e876dc-fe09-4b5d-bf5e-432d6f73dec8",
-                "name": "Lily arrested",
-                "date": "3576-04-30",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "<p>Lily is caught during her hacking spree. She was using information stolen from Joanna, which implicates Joanna as well.</p>",
-                "prose": "",
-                "word_count": 0,
-                "summary_expanded": false,
-                "prose_expanded": false
-            },
-            {
-                "id": "7ae5ed24-35f2-41c3-b9c9-df8cfa108592",
-                "name": "Viggo meets Emily",
-                "date": "3577-01-04",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "<p>Perhaps as part of the brigand group she later hires? I would like them to have some kind of history - perhaps he is with a group that captures her on the road as she is traveling back from Mary's wedding, the same group she presses into her service.</p>",
-                "prose": "",
-                "word_count": 49,
-                "summary_expanded": false,
-                "prose_expanded": false
-            },
-            {
-                "id": "750f4f9c-0054-4a63-85dc-ab09b7049e0d",
-                "name": "King Edward Dies",
-                "date": "3578-10-01",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "",
-                "prose": "",
-                "word_count": 0
-            },
-            {
-                "id": "82454bd5-ef52-4475-add1-4ce996ab8fdf",
-                "name": "Emily hires Elle to deal with the sisters",
-                "date": "3578-10-04",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "",
-                "prose": "",
-                "word_count": 0
-            },
-            {
-                "id": "0097792b-14b5-4067-bf44-c4ca80eed379",
-                "name": "Job Offer",
-                "date": "3578-10-05",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "<p>Mostly made up, the job offer is to get Elle to the other city so she can carry out the assassination - the rest is just cover. Emily claims that an important artifact has been stolen from the city by the sisters, and their job is to get it back. Specifically, she implicates the elder sister's new husband in the crime, telling them that edward is sickly and this man hopes to press Mary's claim, using the artifact as leverage. The item in question is a regulator for the dome - without it, the dome will not survive the next solar season. Joanna, devoted as always, agrees to retrieve it by any means necessary. But of course, it must be in secret. The official story is banishment.</p>",
-                "prose": "",
-                "word_count": 127,
-                "summary_expanded": false,
-                "prose_expanded": false
-            },
-            {
-                "id": "56188527-1669-40a2-ba2c-eefc85fc5844",
-                "name": "Into the wasteland",
-                "date": "3578-10-06",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "<p>Viggo has no delusions - this is a suicide mission. They are being disposed of. Which grates on him because of his previous experience with Emily.</p>",
-                "prose": "",
-                "word_count": 0,
-                "summary_expanded": false,
-                "prose_expanded": false
-            },
-            {
-                "id": "b587163d-5275-4192-9bc7-b7e8c8daf9ff",
-                "name": "Emily forges Edward's will",
-                "date": "3579-01-22",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "",
-                "prose": "",
-                "word_count": 0
-            },
-            {
-                "id": "2e8a8c3a-768e-434e-b347-f3b3be4b15f6",
-                "name": "Elle spares Mary and Elizabeth",
-                "date": "3579-02-13",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "",
-                "prose": "",
-                "word_count": 0
-            },
-            {
-                "id": "16e74488-153b-4c31-9dc5-1836420c4dfc",
-                "name": "Emily receives word that Mary and Elizabeth are dead",
-                "date": "3579-03-05",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "",
-                "prose": "",
-                "word_count": 0
-            },
-            {
-                "id": "05dfcc49-2d04-4d84-a3ba-1553e0b4be25",
-                "name": "Emily ascends to the throne",
-                "date": "3579-03-11",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "",
-                "prose": "",
-                "word_count": 0
-            },
-            {
-                "id": "72c80ad6-95da-43bb-950c-e258878ebe19",
-                "name": "Emily is deposed",
-                "date": "3579-03-20",
-                "dynamic_properties": {},
-                "tags": [],
-                "summary": "",
-                "prose": "",
-                "word_count": 0
-            }
-];
-
+let cards = [];
 let display = null;
 let card_display = null;
 let left_filters = { display: null, filters: [] };
@@ -344,25 +46,38 @@ function make_card_contents(card) {
     );
 }
 
+function make_word_percentage_display(word_count, word_goal) {
+    var percentage = Math.floor((word_count / word_goal) * 100);
+    if (word_count > word_goal) percentage = 100;
+
+    return f.div(
+        f.div("" + word_count + " of " + word_goal)._style({fontSize: "0.6em", fontWeight: "bold", marginTop: "2px"}),
+        f.div(
+            f.div()._style({width: "" + percentage + "%", minHeight: "8px", marginTop: "0px", marginLeft: "0px"}).class("marker")
+        )
+    )._style({ gridTemplateRows: "15px 15px", paddingTop: "0px"});
+}
+
 function make_card_display(card, sequence, type) {
     var summary_div, prose_div;
     var r = f.div(
         f.div(card.name)._style({fontWeight: "bold"}).grid(1,2,2,3),
         f.div(sequence).grid(1, 3, 2, 4),
-        f.button("Edit", () => edit_card(card)).grid(1,4,2,5)._style({justifySelf: "start", alignSelf: "start"}),
-        summary_div = make_card_contents(card).grid(2,2,3,6)._style({display: card.summary_expanded ? "block" : "none"}),
-        prose_div = f.raw_div(card.prose).grid(3,1,4,6)._style({display: card.prose_expanded ? "block" : "none"}),
-        make_expando_button(summary_div, card.summary_expanded, (state) => card.summary_expanded = state).grid(1,5,2,6),
-        make_expando_button(prose_div, card.prose_expanded, (state) => card.summary_expanded = state).grid(1,6,2,7)
+        make_word_percentage_display(card.word_count, card.word_goal).grid(1, 4, 2, 5).class("box"),
+        f.button("Edit", () => edit_card(card)).grid(1,5,2,6)._style({justifySelf: "start", alignSelf: "start"}),
+        summary_div = make_card_contents(card).grid(2,2,3,7)._style({display: card.summary_expanded ? "block" : "none"}),
+        prose_div = f.raw_div(card.prose).grid(3,2,4,7)._style({display: card.prose_expanded ? "block" : "none"}),
+        make_expando_button(summary_div, card.summary_expanded, (state) => card.summary_expanded = state).grid(1,6,2,7),
+        make_expando_button(prose_div, card.prose_expanded, (state) => card.summary_expanded = state).grid(1,7,2,8)
     )._style({
-        gridTemplateColumns: "15px Auto 150px 80px 30px 30px 15px",
+        gridTemplateColumns: "15px Auto 150px 130px 80px 30px 30px 15px",
         gridTemplateRows: "30px auto"
     });
 
     if (type == "left" || type == "both")
         r.appendChild(f.div().class("marker").grid(1,1,3,2));
     if (type == "right" || type == "both")
-        r.appendChild(f.div().class("marker").grid(1,7,3,8));
+        r.appendChild(f.div().class("marker").grid(1,8,3,9));
 
     return r;
 }
@@ -518,7 +233,9 @@ function make_blank_card() {
         dynamic_properties: {},
         tags: [],
         summary: "",
-        prose: ""
+        prose: "",
+        word_count: 0,
+        word_goal: 0
     };
 }
 
@@ -590,6 +307,7 @@ function make_card_editor(card) {
         f.div("CARD ID: " + card.id).class("margin-box"),
         f.div("Name: ", editor.name_editor = f.input(card.name)).class("margin-box"),
         f.div("Date: ", editor.date_editor = f.input(card.date)).class("margin-box"),
+        f.div("Word Goal: ", editor.word_goal_editor = f.input(card.word_goal).modify(e => e.type = 'number')).class("margin-box"),
         ...editor.dynamic_property_editors,
         editor.new_property_row = f.div(
             f.button("+ Property", 
@@ -600,7 +318,7 @@ function make_card_editor(card) {
                 }).modify(e => e.style.float = "right")
             ).modify(d => d.style.overflow = "hidden"),
         f.div(editor.tag_list = f.div()).class("margin-box box"),
-        f.div("Summary: ", editor.summary_editor_div = make_text_editor(card.summary, (stats) => card.word_count = stats.word_count)),
+        f.div("Summary: ", editor.summary_editor_div = make_text_editor(card.summary, () => {})),
         f.div("Prose: ", editor.prose_editor_div = make_text_editor(card.prose, (stats) => { card.word_count = stats.word_count; update_stats(); })),
         f.div(
             f.button("Save",
@@ -614,7 +332,7 @@ function make_card_editor(card) {
                 destroy_modal(editor);
             }).modify(e => e.style.float = "left")
         ).modify(d => d.style.overflow = "hidden")
-    ).class("padded-box");
+    ).class("padded-box")._style({overflow: "auto"});
 
     editor.summary_editor_div = editor.summary_editor_div.firstChild;
     editor.prose_editor_div = editor.prose_editor_div.firstChild;
@@ -633,7 +351,7 @@ function make_text_editor(contents, stats_func) {
     var contents_div;
     var stats_div;
     var r = f.div(
-        contents_div = f.raw_div(contents)._style({padding: "4px"}).class("editable margin-box"),
+        contents_div = f.raw_div(contents)._style({padding: "4px", overflow: "auto", maxHeight: "500px"}).class("editable margin-box"),
         stats_div = f.div("STATS")
     )._style({gridTemplateRows: "auto 40px"});
     r._medium_editor = new MediumEditor(contents_div);
@@ -652,13 +370,18 @@ function count_words(s){
 
 function update_stats() {
     var total_prose_words = 0;
-    for (var card of cards) 
+    var total_prose_goal = 0;
+    for (var card of cards) {
         if (card.hasOwnProperty("word_count")) 
             total_prose_words += card.word_count;
+        if (card.hasOwnProperty("word_goal") && card.word_goal != "")
+            total_prose_goal += parseInt(card.word_goal);
+    }
     clear(stats_display);
     stats_display.appendChild(f.div(
         f.div("Cards: " + cards.length),
-        f.div("Words: " + total_prose_words)
+        f.div("Words: " + total_prose_words),
+        f.div("Goal: " + total_prose_goal)
     ));
 }
 
@@ -762,6 +485,7 @@ function save_values_to_card(editor) {
     editor.current_card.date = editor.date_editor.value;
     editor.current_card.summary = editor.summary_editor_div.innerHTML;
     editor.current_card.prose = editor.prose_editor_div.innerHTML;
+    editor.current_card.word_goal = editor.word_goal_editor.value;
     
     editor.current_card.dynamic_properties = {};
     for (var property_editor of editor.dynamic_property_editors)
